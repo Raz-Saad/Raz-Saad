@@ -43,3 +43,8 @@
 <p>
   &nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=Raz-Saad&show_icons=true&locale=en" alt="Raz-Saad" />
 </p>
+
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=Raz-Saad&show_icons=true&theme=dark&cache_seconds=1800&locale=en" alt="Raz-Saad" />
+
+<h3>GitHub Trophies</h3>
+<p><img src="https://github-profile-trophy.vercel.app/?username=Raz-Saad&theme=algolia" alt="Raz-Saad" /></p>
