@@ -28,18 +28,20 @@
 
 
 <h3>GitHub Stats</h3>
+<!-- Profile Views Counter -->
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=raz-saad&label=Profile%20views&color=0e75b6&style=flat" alt="raz-saad" /> </p>
 <p>
-  <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=raz-saad&theme=dark&show_icons=true&cache_seconds=1800&locale=en&layout=compact" alt="raz-saad" />
+  <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=raz-saad&theme=dark&show_icons=true&locale=en&layout=compact" alt="raz-saad" />
 </p>
 <p>
-  &nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=raz-saad&show_icons=true&cache_seconds=1800&locale=en&theme=dark" alt="raz-saad" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=raz-saad&show_icons=true&locale=en&theme=dark" alt="raz-saad" />
 </p>
-<p>
-<img align="center" src="https://github-readme-stats.vercel.app/api?username=raz-saad&show_icons=true&theme=dark&cache_seconds=1800&locale=en" alt="raz-saad" />
-</p>
+
 <h3>GitHub Trophies</h3>
-<p><img src="https://github-profile-trophy.vercel.app/?username=raz-saad&theme=algolia" alt="raz-saad" /></p>
+<!-- GitHub Trophies -->
+<a href="https://github.com/raz-saad">
+  <img align="center" src="https://github-profile-trophy.vercel.app/?username=raz-saad&theme=algolia" />
+</a>
 
 <h3>Where to find me</h3>
 <p>
@@ -50,3 +52,6 @@
     <img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
 </p>
+
+
+
