@@ -36,6 +36,10 @@
 <p>
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=raz-saad&show_icons=true&locale=en&theme=dark" alt="raz-saad" />
 </p>
+<p>
+<img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=raz-saad&theme=dark" />
+</p>
+
 
 <h3>GitHub Trophies</h3>
 <!-- GitHub Trophies -->
