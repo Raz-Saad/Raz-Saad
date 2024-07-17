@@ -26,6 +26,20 @@
 <!--START_SECTION:repos-->
 <!--END_SECTION:repos-->
 
+
+<h3>GitHub Stats</h3>
+<p>
+  <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=Raz-Saad&show_icons=true&locale=en&layout=compact" alt="Raz-Saad" />
+</p>
+<p>
+  &nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=Raz-Saad&show_icons=true&locale=en" alt="Raz-Saad" />
+</p>
+<p>
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=Raz-Saad&show_icons=true&theme=dark&cache_seconds=1800&locale=en" alt="Raz-Saad" />
+</p>
+<h3>GitHub Trophies</h3>
+<p><img src="https://github-profile-trophy.vercel.app/?username=Raz-Saad&theme=algolia" alt="Raz-Saad" /></p>
+
 <h3>Where to find me</h3>
 <p>
   <a href="https://github.com/Raz-Saad" target="_blank">
@@ -35,16 +49,3 @@
     <img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
 </p>
-
-<h3>GitHub Stats</h3>
-<p>
-  <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=Raz-Saad&show_icons=true&locale=en&layout=compact" alt="Raz-Saad" />
-</p>
-<p>
-  &nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=Raz-Saad&show_icons=true&locale=en" alt="Raz-Saad" />
-</p>
-
-<img align="center" src="https://github-readme-stats.vercel.app/api?username=Raz-Saad&show_icons=true&theme=dark&cache_seconds=1800&locale=en" alt="Raz-Saad" />
-
-<h3>GitHub Trophies</h3>
-<p><img src="https://github-profile-trophy.vercel.app/?username=Raz-Saad&theme=algolia" alt="Raz-Saad" /></p>
