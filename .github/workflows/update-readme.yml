@@ -1,51 +1,32 @@
-name: Update README with latest repositories
+name: Update Latest Repositories
 
 on:
   schedule:
-    - cron: '0 * * * *'  # This will run every hour
-  workflow_dispatch:  # This allows you to manually trigger the workflow
+    # Update every 24 hours
+    - cron: '0 0 * * *'
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Update README
-        uses: actions/github-script@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
         with:
-          script: |
-            const octokit = require('@octokit/rest')({
-              auth: process.env.GITHUB_TOKEN
-            });
+          node-version: '14'
 
-            const { data: repos } = await octokit.repos.listForUser({
-              username: 'YOUR_GITHUB_USERNAME',
-              sort: 'created',
-              direction: 'desc',
-              per_page: 5
-            });
+      - name: Install dependencies
+        run: npm install github-readme-stats
 
-            const readmePath = './README.md';
-            const fs = require('fs');
-            let readmeContent = fs.readFileSync(readmePath, 'utf-8');
+      - name: Update README
+        run: npx github-readme-stats --username Raz-Saad --layout vertical --exclude forks
 
-            const reposList = repos.map(repo => `- [${repo.name}](${repo.html_url}): ${repo.description || ''}`).join('\n');
-
-            const updatedReadme = readmeContent.replace(
-              /<!--START_SECTION:repos-->[\s\S]*<!--END_SECTION:repos-->/,
-              `<!--START_SECTION:repos-->\n${reposList}\n<!--END_SECTION:repos-->`
-            );
-
-            fs.writeFileSync(readmePath, updatedReadme);
-            
       - name: Commit changes
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@users.noreply.github.com'
           git add README.md
-          git commit -m 'Update latest repositories in README'
+          git commit -m 'Updated latest repositories'
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
