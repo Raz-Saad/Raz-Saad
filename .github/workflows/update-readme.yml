@@ -3,7 +3,8 @@ name: Update Latest Repositories
 on:
   schedule:
     - cron: '0 0 * * *'  # Update every 24 hours
-
+  workflow_dispatch:  # Allows manual triggering
+  
 jobs:
   update-readme:
     runs-on: ubuntu-latest
