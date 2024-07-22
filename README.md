@@ -25,8 +25,6 @@
 <h3>My latest repositories </h3>
 <!--START_SECTION:repos-->
 <!--END_SECTION:repos-->
-<!--END_SECTION:repos-->
-
 
 <h3>GitHub Stats</h3>
 <!-- Profile Views Counter -->
