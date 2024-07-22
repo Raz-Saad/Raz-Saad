@@ -2,18 +2,18 @@ name: Update Latest Repositories
 
 on:
   schedule:
-    # Update every 24 hours
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * *'  # Update every 24 hours
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
 
@@ -21,12 +21,15 @@ jobs:
         run: npm install github-readme-stats
 
       - name: Update README
-        run: npx github-readme-stats --username Raz-Saad --layout vertical --exclude forks
-
+        run: |
+          npx github-readme-stats --username Raz-Saad --layout vertical --exclude forks > updated_repos.md
+          sed -i '/<!--START_SECTION:repos-->/, /<!--END_SECTION:repos-->/d' README.md
+          sed -i "/<!--END_SECTION:repos-->/i $(cat updated_repos.md)" README.md
+          
       - name: Commit changes
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@users.noreply.github.com'
           git add README.md
-          git commit -m 'Updated latest repositories'
+          git commit -m 'Update latest repositories'
           git push
