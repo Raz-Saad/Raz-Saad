@@ -25,8 +25,10 @@ jobs:
 
       - name: Update README
         run: |
-          sed -i '/<!--START_SECTION:repos-->/, /<!--END_SECTION:repos-->/d' README.md
-          sed -i "/<!--END_SECTION:repos-->/i $(cat updated_repos.md)" README.md
+          awk '/<!--START_SECTION:repos-->/ {print; in_section=1; next} /<!--END_SECTION:repos-->/ {print; in_section=0} !in_section' README.md > temp_readme.md
+          cat updated_repos.md >> temp_readme.md
+          echo "<!--END_SECTION:repos-->" >> temp_readme.md
+          mv temp_readme.md README.md
 
       - name: Commit changes
         run: |
