@@ -18,7 +18,7 @@ jobs:
 
       - name: Fetch latest repositories
         run: |
-          gh auth login --with-token < ${{ secrets.GITHUB_TOKEN }}
+          gh auth login --with-token < ${{ secrets.MY_GITHUB_TOKEN }}
           gh repo list Raz-Saad --limit 5 --json name,url --jq '.[] | "* [" + .name + "](" + .url + ")"' > updated_repos.md
 
       - name: Update README
