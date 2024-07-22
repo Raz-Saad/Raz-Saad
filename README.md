@@ -25,6 +25,7 @@
 <h3>My latest repositories </h3>
 <!--START_SECTION:repos-->
 <!--END_SECTION:repos-->
+<!--END_SECTION:repos-->
 
 <h3>GitHub Stats</h3>
 <!-- Profile Views Counter -->
@@ -58,6 +59,13 @@
 
 
 
+* [Raz-Saad](https://github.com/Raz-Saad/Raz-Saad)
+* [Cloud_Computing_Final_Assignment](https://github.com/Raz-Saad/Cloud_Computing_Final_Assignment)
+* [DDOS_Attack_Detection_Using_Machine_Learning](https://github.com/Raz-Saad/DDOS_Attack_Detection_Using_Machine_Learning)
+* [Communication-Computing_Course_Final_Project](https://github.com/Raz-Saad/Communication-Computing_Course_Final_Project)
+* [Phishing_Email_Generator](https://github.com/Raz-Saad/Phishing_Email_Generator)
+<!--END_SECTION:repos-->
+<!--END_SECTION:repos-->
 * [Raz-Saad](https://github.com/Raz-Saad/Raz-Saad)
 * [Cloud_Computing_Final_Assignment](https://github.com/Raz-Saad/Cloud_Computing_Final_Assignment)
 * [DDOS_Attack_Detection_Using_Machine_Learning](https://github.com/Raz-Saad/DDOS_Attack_Detection_Using_Machine_Learning)
